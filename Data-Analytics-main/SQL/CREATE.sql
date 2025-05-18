@@ -1,0 +1,11 @@
+SHOW DATABASES;
+CREATE DATABASE IF NOT EXISTS group1;
+USE group1;
+SHOW TABLES;
+CREATE TABLE student1(id CHAR(3) PRIMARY KEY,
+name VARCHAR(30) NOT NULL, 
+course VARCHAR(10) DEFAULT "maths");
+DESCRIBE student1;
+SELECT * FROM student1;   
+
+INSERT INTO student1 VALUES("S01","abc","science");
